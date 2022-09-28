@@ -16,7 +16,7 @@ let getCountrys = async () => {
 } 
 
   return (
-    <div>
+    <div className='bg-[#202c37]'>
         {countrys.map((country, index) => {
             return <Country country={country} key={index} />
         })}
