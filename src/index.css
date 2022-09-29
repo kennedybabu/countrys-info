@@ -8,3 +8,20 @@
 body {
     font-family: 'Nunito Sans', sans-serif;
 }
+
+
+.country p span {
+    margin-left: 10px;
+}
+
+
+.img-wrapper,
+.img-wrapper img {
+    border-radius: 5px 5px 0 0;
+}
+
+
+.search:focus,
+.search:active {
+    outline: none;
+}
