@@ -8,13 +8,13 @@ function App() {
 const [dark, setDark] = useState(false)
 
 const darkMode = {
-  backgroundColor: '#2b3945',
+  backgroundColor: '#202c37',  
   color: 'white'
 }
 
 
 const lightMode = {
-  backgroundColor : 'white',
+  backgroundColor : '#fafafa',
   color: 'black'
 }
 
@@ -24,10 +24,10 @@ function handleChange() {
 }
 
   return (
-    <div className="text-[16px]">
-      <Header dark={dark} handleChange={handleChange} darkMode={darkMode} lightMode={lightMode}/>
-      <SearchBar />
-      <ListItems />
+    <div className="text-[16px]" style={dark? darkMode : lightMode}>
+      <Header handleChange={handleChange} dark={dark} darkMode={darkMode} lightMode={lightMode}/>
+      <SearchBar dark={dark} darkMode={darkMode} lightMode={lightMode}/>
+      <ListItems dark={dark} darkMode={darkMode} lightMode={lightMode}/>
     </div>
   );
 }
